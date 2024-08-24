@@ -27,6 +27,8 @@ class HomeViewBody extends StatelessWidget {
           ...List.generate(customListTile.length, (index) {
             final tile = customListTile[index];
             return Card(
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(15)),
               elevation: 4,
               shadowColor: Colors.black12,
               child: GestureDetector(
